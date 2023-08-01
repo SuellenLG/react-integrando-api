@@ -27,9 +27,10 @@ const Restaurante = ({ restaurante }: RestauranteProps) => {
       <h2>{restaurante.nome}</h2>
     </div>
     <div>
-      {restaurante.pratos?.map(item => <Prato prato={item} key={item.id} />)}
+      {pratos?.map(item => <Prato prato={item} key={item.id} />)}
     </div>
   </section>)
 }
 
 export default Restaurante
+
